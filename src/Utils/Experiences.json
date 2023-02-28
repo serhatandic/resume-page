@@ -1,0 +1,18 @@
+{
+  "Experience1": {
+    "title": "Experience 1",
+    "company": "V-Count",
+    "location": "Ankara,Turkey",
+    "date": "2022",
+    "description": "Worked on a remote configuration page that configures V-Count devices around the globe.",
+    "role": "Software Engineering Intern"
+  },
+  "Experience2": {
+    "title": "Experience 2",
+    "company": "V-Count",
+    "location": "Ankara,Turkey",
+    "date": "2023",
+    "description": "Continued my internship project, mainly used nodejs, express, react and mqtt",
+    "role": "Full-Stack Developer"
+  }
+}

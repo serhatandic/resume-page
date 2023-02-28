@@ -1,0 +1,12 @@
+{
+  "Project1": {
+    "title": "Metu Itiraf",
+    "description": "A confession website where people share their confessions under an anonymous nickname. Frontend part is written in react and deployed on netlify, Backend part is written in nodejs (express.js) and deployed on heroku. Used supabase as the database. Check my github for details",
+    "link": "https://www.metuitiraf.online"
+  },
+  "Project2": {
+    "title": "Crudful Todo",
+    "description": "A basic todo app with crud operations. Frontend part is written in react with typescript and deployed on netlify. Check my github for details",
+    "link": "https://crudfultodo.netlify.app/"
+  }
+}
