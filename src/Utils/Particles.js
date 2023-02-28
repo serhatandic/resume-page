@@ -3,7 +3,7 @@ document.body.appendChild(canvas);
 const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-let particlesArray:Particle[] = [];
+let particlesArray = [];
 let hue = 0;
 
 window.addEventListener("resize", () => {
@@ -12,8 +12,8 @@ window.addEventListener("resize", () => {
 });
 
 const mouse = {
-  x: 0,
-  y: 0,
+  x: null,
+  y: null,
 };
 
 window.addEventListener("mousemove", (event) => {
@@ -25,13 +25,6 @@ window.addEventListener("mousemove", (event) => {
 });
 
 class Particle {
-  x: number;
-  y: number;
-  size: number;
-  speedX: number;
-  speedY: number;
-  color: string;
-
   constructor() {
     this.x = mouse.x;
     this.y = mouse.y;
@@ -50,10 +43,10 @@ class Particle {
   }
 
   draw() {
-    ctx!.fillStyle = this.color;
-    ctx!.beginPath();
-    ctx!.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-    ctx!.fill();
+    ctx.fillStyle = this.color;
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+    ctx.fill();
   }
 }
 
@@ -67,13 +60,13 @@ const handleParticles = () => {
       const dy = particlesArray[i].y - particlesArray[j].y;
       const distance = Math.sqrt(dx * dx + dy * dy);
       if (distance < 100) {
-        ctx!.beginPath();
-        ctx!.strokeStyle = particlesArray[i].color;
-        ctx!.lineWidth = 0.2;
-        ctx!.moveTo(particlesArray[i].x, particlesArray[i].y);
-        ctx!.lineTo(particlesArray[j].x, particlesArray[j].y);
-        ctx!.stroke();
-        ctx!.closePath();
+        ctx.beginPath();
+        ctx.strokeStyle = particlesArray[i].color;
+        ctx.lineWidth = 0.2;
+        ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
+        ctx.lineTo(particlesArray[j].x, particlesArray[j].y);
+        ctx.stroke();
+        ctx.closePath();
       }
     }
 
@@ -85,7 +78,7 @@ const handleParticles = () => {
 };
 
 const animate = () => {
-  ctx!.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
   //   ctx.fillStyle = "rgba(0,0,0,0.02)";
   //   ctx.fillRect(0, 0, canvas.width, canvas.height);
   handleParticles();
