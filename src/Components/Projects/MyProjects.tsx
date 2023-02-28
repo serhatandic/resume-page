@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import Project from "./Project";
-import MyProjectsList from "../Utils/MyProjects.json";
+import MyProjectsList from "../../Utils/MyProjects.json";
 import { styled } from "@mui/material/styles";
 
 const ResponsiveBox = styled(Box)(({ theme }) => ({

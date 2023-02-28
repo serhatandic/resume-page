@@ -1,15 +1,15 @@
 import { useState } from "react";
 import "./App.css";
 import { Box } from "@mui/material";
-import Header from "./Components/Header";
-import HeaderSum from "./Components/HeaderSum";
+import Header from "./Components/Heading/Header";
+import HeaderSum from "./Components/Heading/HeaderSum";
 import Links from "./Components/Links";
-import ProgressLine from "./Components/ProgressLine";
-import ExperiencesBlock from "./Components/ExperiencesBlock";
+import ProgressLine from "./Components/Progress/ProgressLine";
+import ExperiencesBlock from "./Components/Experience/ExperiencesBlock";
 import ProfilePic from "./Components/ProfilePic";
 import Education from "./Components/Education";
-import Skills from "./Components/Skills";
-import MyProjects from "./Components/MyProjects";
+import Skills from "./Components/Skills/Skills";
+import MyProjects from "./Components/Projects/MyProjects";
 import { styled } from "@mui/material/styles";
 
 const ResponsiveBoxOuterScope = styled(Box)(({ theme }) => ({

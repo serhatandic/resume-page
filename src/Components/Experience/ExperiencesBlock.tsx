@@ -1,8 +1,8 @@
-import { Box, Divider, Typography } from "@mui/material";
-import ProgressFilled from "./ProgressFilled";
+import { Box, Typography } from "@mui/material";
+import ProgressFilled from "../Progress/ProgressFilled";
 import Experience from "./Experience";
-import experiences from "../Utils/Experiences.json";
-import PorgressOutlined from "./ProgressOutlined";
+import experiences from "../../Utils/Experiences.json";
+import PorgressOutlined from "../Progress/ProgressOutlined";
 
 const experience1 = experiences.Experience1;
 const experience2 = experiences.Experience2;
